@@ -14,6 +14,19 @@ object L2BasicsContinued {
       case 2 => "two"
       case _ => "some other number"
     }
+
+    //case classes
+    case class Calculator(brand: String, model: String)
+
+    val hp20b = Calculator("hp", "20B")
+    val hp30b = Calculator("hp", "30B")
+
+    def calcType(calc: Calculator) = calc match {
+      case Calculator("hp", "20B") => "financial"
+      case Calculator("hp", "48G") => "scientific"
+      case Calculator("hp", "30B") => "business"
+      case Calculator(_, _) => "Calculator: %s %s is of unknown type".format(_, _)
+    }
   }
 
   def bigger(o: Any): Any = {
@@ -45,3 +58,4 @@ object addOne extends Function1[Int, Int] {
 class AddOne extends (Int => Int) {
   def apply(m: Int): Int = m + 1
 }
+
