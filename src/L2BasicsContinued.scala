@@ -25,7 +25,7 @@ object L2BasicsContinued {
       case Calculator("hp", "20B") => "financial"
       case Calculator("hp", "48G") => "scientific"
       case Calculator("hp", "30B") => "business"
-      case Calculator(_, _) => "Calculator: %s %s is of unknown type".format(_, _)
+      case Calculator(_, _) => "Calculator is of unknown type"
     }
 
     //exceptions
