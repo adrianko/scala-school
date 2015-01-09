@@ -1,3 +1,4 @@
+//package com.maestery.ak
 object L2BasicsContinued {
   def main(args: Array[String]) = {
     println(FooMaker())
