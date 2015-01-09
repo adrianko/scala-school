@@ -27,6 +27,9 @@ object L2BasicsContinued {
       case Calculator("hp", "30B") => "business"
       case Calculator(_, _) => "Calculator: %s %s is of unknown type".format(_, _)
     }
+
+    //exceptions
+
   }
 
   def bigger(o: Any): Any = {
