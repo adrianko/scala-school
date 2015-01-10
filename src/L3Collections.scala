@@ -14,6 +14,11 @@ object L3Collections {
         Map(1 -> 2)
         Map("foo" -> "bar")
 
-        
+        //option - a container thay may or may not hold something
+        trait Option[T] {
+            def isDefined: Boolean
+            def get: T
+            def getOrElse(t: T): T
+        }
     }
 }
