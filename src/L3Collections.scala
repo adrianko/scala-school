@@ -6,5 +6,9 @@ object L3Collections {
         //sets
         println(Set(1,2,3))
 
+        //tuple
+        val tuple = ("localhost", 80)
+        println(tuple._1)
+
     }
 }
