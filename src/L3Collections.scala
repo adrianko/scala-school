@@ -45,8 +45,13 @@ object L3Collections {
         //find
         moreNumbers.find((i: Int) => i > 5)
 
-        //drop
+        //drop - drops first i elements
         moreNumbers.drop(5)
+
+        //dropWhile - removes elements until function not met
+        moreNumbers.dropWhile(_ % 2 == 0)
+
+
 
     }
 }
