@@ -57,5 +57,9 @@ object L3Collections {
         //foldRight
         moreNumbers.foldRight(0)((m: Int, n: Int) => m + n)
 
+        //flatten
+        List(List(1, 2), List(3, 4)).flatten
+
+
     }
 }
