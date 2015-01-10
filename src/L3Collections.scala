@@ -60,6 +60,11 @@ object L3Collections {
         //flatten
         List(List(1, 2), List(3, 4)).flatten
 
+        //flatMap - combines mapping and flattening
+        val nestedNumbers = List(List(1, 2), List(3, 4))
+        nestedNumbers.flatMap(x => x.map(_ * 2))
 
+        //shorthand for this
+        nestedNumbers.map((x: List[Int]) => x.map(_ * 2)).flatten
     }
 }
