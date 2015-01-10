@@ -51,7 +51,11 @@ object L3Collections {
         //dropWhile - removes elements until function not met
         moreNumbers.dropWhile(_ % 2 == 0)
 
+        //foldLeft
+        moreNumbers.foldLeft(0)((m: Int, n: Int) => m + n)
 
+        //foldRight
+        moreNumbers.foldRight(0)((m: Int, n: Int) => m + n)
 
     }
 }
