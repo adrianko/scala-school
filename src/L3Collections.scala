@@ -34,5 +34,9 @@ object L3Collections {
 
         //filter
         numbers.filter((i: Int) => i % 2 == 0)
+
+        //zip
+        List(1,2,3).zip(List("a", "b", "c"))
+
     }
 }
