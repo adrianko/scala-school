@@ -32,5 +32,8 @@ object L3Collections {
 
         //foreach
         val doubled = numbers.foreach((i: Int) => i * 2)
+
+        //filter
+        numbers.filter((i: Int) => i % 2 == 0)
     }
 }
