@@ -1,7 +1,7 @@
 object L3Collections {
     def main(args: Array[String]) {
         //lists
-        println(List(1,2,3,4))
+        val numbers = List(1,2,3,4)
 
         //sets
         println(Set(1,2,3))
@@ -20,5 +20,14 @@ object L3Collections {
             def get: T
             def getOrElse(t: T): T
         }
+
+
+        //functional combinators
+        //map
+        numbers.map( (i: Int) => i * 2)
+        //or
+        def timesTwo(i: Int): Int = i * 2
+        numbers.map(timesTwo _)
+
     }
 }
