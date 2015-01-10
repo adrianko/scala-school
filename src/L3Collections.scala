@@ -35,8 +35,11 @@ object L3Collections {
         //filter
         numbers.filter((i: Int) => i % 2 == 0)
 
-        //zip
+        //zip - aggregates the contents of two lists into a single list of pairs.
         List(1,2,3).zip(List("a", "b", "c"))
 
+        //partition - splits a list based on where it falls with respect to a predicate function.
+        val moreNumbers = List(1,2,3,4,5,6,7,8,9,10)
+        moreNumbers.partition(_ % 2 == 0)
     }
 }
