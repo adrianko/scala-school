@@ -10,5 +10,10 @@ object L3Collections {
         val tuple = ("localhost", 80)
         println(tuple._1)
 
+        //maps
+        Map(1 -> 2)
+        Map("foo" -> "bar")
+
+        
     }
 }
