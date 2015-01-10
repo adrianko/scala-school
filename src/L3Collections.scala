@@ -24,7 +24,6 @@ object L3Collections {
 
         //functional combinators
         //map
-        numbers.map( (i: Int) => i * 2)
         numbers.map((i: Int) => i * 2)
         //or
         def timesTwo(i: Int): Int = i * 2
