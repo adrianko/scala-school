@@ -41,5 +41,10 @@ object L3Collections {
         //partition - splits a list based on where it falls with respect to a predicate function.
         val moreNumbers = List(1,2,3,4,5,6,7,8,9,10)
         moreNumbers.partition(_ % 2 == 0)
+
+        //find
+        moreNumbers.find((i: Int) => i > 5)
+
+
     }
 }
