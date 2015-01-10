@@ -76,7 +76,9 @@ object L3Collections {
 
         ourMap(numbers, timesTwo(_))
 
-        
+        //map? -> case
+        val extensions = Map("steve" -> 100, "bob" -> 101, "joe" -> 201)
+        extensions.filter({case (name, extension) => extension < 200})
 
     }
 }
