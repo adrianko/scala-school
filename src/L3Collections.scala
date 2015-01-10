@@ -45,6 +45,8 @@ object L3Collections {
         //find
         moreNumbers.find((i: Int) => i > 5)
 
+        //drop
+        moreNumbers.drop(5)
 
     }
 }
