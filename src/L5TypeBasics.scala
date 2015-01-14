@@ -12,6 +12,10 @@ object L5TypeBasics {
         //type mismatch
         //def foo[A, B](f: A => List[A], b: B) = f(b)
 
-
+        //variance
+        class Covariant[+A]
+        val cv: Covariant[AnyRef] = new Covariant[String]
+        //type mismatch
+        //val cv: Covariant[String] = new Covariant[AnyRef]
     }
 }
