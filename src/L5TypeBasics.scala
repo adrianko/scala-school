@@ -32,5 +32,9 @@ object L5TypeBasics {
 
         val flock = List(new Bird, new Bird)
         new Chicken :: flock
+
+        //quantification
+        def count[A](l: List[A]) = l.size
+        def count2(l: List[_]) = l.size
     }
 }
