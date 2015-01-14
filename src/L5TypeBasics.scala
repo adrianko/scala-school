@@ -17,5 +17,11 @@ object L5TypeBasics {
         val cv: Covariant[AnyRef] = new Covariant[String]
         //type mismatch
         //val cv: Covariant[String] = new Covariant[AnyRef]
+
+        class Animal { val sound = "rustle" }
+        class Bird extends Animal { override val sound = "call" }
+        class Chicken extends Bird { override val sound = "cluck" }
+        val getTweet: (Bird => String) = ((a: Animal) => a.sound)
+        val hatch: (() => Bird) = (() => new Chicken)
     }
 }
