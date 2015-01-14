@@ -23,5 +23,14 @@ object L5TypeBasics {
         class Chicken extends Bird { override val sound = "cluck" }
         val getTweet: (Bird => String) = ((a: Animal) => a.sound)
         val hatch: (() => Bird) = (() => new Chicken)
+
+        //bounds
+        //def cacophony[T](things: Seq[T]) = things.map(_.sound) //non-member
+        def biophony[T <: Animal](things: Seq[T]) = things.map(_.sound)
+
+        biophony(Seq(new Chicken, new Bird))
+
+        val flock = List(new Bird, new Bird)
+        new Chicken :: flock
     }
 }
